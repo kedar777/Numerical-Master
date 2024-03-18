@@ -2,22 +2,24 @@ body {
     background-color: black;
     color: white;
     font-family: Arial, sans-serif;
+    text-align: center;
 }
 
 .container {
-    max-width: 20%;
-    margin: 30px auto;
+    max-width: 400px;
+    margin: 50px auto;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    background-color: #222;
+    /* Dark background color */
     display: flex;
     flex-direction: column;
 }
 
 h2 {
-    text-align: center;
-    margin-bottom: 20px;
     color: orange;
+    margin-bottom: 20px;
 }
 
 .input-container,
@@ -36,42 +38,46 @@ label {
 }
 
 input[type="text"],
-input[type="number"] {
-    width: 100%;
-    margin-bottom: 10px;
+input[type="number"],
+button {
+    margin: 10px;
     padding: 10px;
-    font-size: 16px;
-    background-color: #333;
-    color: white;
-    border: 1px solid orange;
+    border: none;
     border-radius: 5px;
+    width: calc(100% - 20px);
     box-sizing: border-box;
+    background-color: #333;
+    color: orange;
+    font-size: 16px;
 }
 
 button {
-    width: 100%;
-    padding: 10px;
     background-color: orange;
-    color: white;
-    border: none;
-    border-radius: 5px;
     cursor: pointer;
+    color: white;
 }
 
 button:hover {
-    background-color: #ff8c00be;
+    background-color: #ff8c00d8;
 }
 
 #result {
-    font-size: 18px;
-    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
     color: orange;
+    /* Orange text color */
+}
+
+#Final {
+    font-size: 30px;
 }
 
 /* Media query for mobile screens */
 @media only screen and (max-width: 600px) {
     .container {
-        padding: 10px;
+        max-width: 100%;
+        margin: 30px auto;
+        padding: 20px;
     }
     input[type="text"],
     input[type="number"],

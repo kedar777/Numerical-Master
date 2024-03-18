@@ -22,12 +22,13 @@ function parseEquations() {
     const numEquations = parseInt(document.getElementById('numEquations').value);
     const matrix = [];
     for (let i = 0; i < numEquations; i++) {
-        const coefficients = document.getElementById(`coefficients${i}`).value.split(/\s+/).map(parseFloat);
+        const coefficients = document.getElementById(`coefficients${i}`).value.trim().split(/\s+/).map(parseFloat);
         const constant = parseFloat(document.getElementById(`constant${i}`).value);
         matrix.push([...coefficients, constant]);
     }
     return matrix;
 }
+
 
 // Gauss-Jordan method
 function gaussJordan(matrix) {
