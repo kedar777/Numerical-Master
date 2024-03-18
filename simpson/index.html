@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integration Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Integration Calculator</h1>
+
+        <h2>Choose Integration Rule</h2>
+        <form id="integrationRuleForm">
+            <input type="radio" id="rule13" name="integrationRule" value="1/3" checked>
+            <label for="rule13">Simpson's 1/3 Rule</label>
+            <input type="radio" id="rule38" name="integrationRule" value="3/8">
+            <label for="rule38">Simpson's 3/8 Rule</label>
+        </form>
+
+        <h2>Integration</h2>
+        <form id="integrationForm">
+            <label for="functionExpression">Function:</label>
+            <input type="text" id="functionExpression" name="functionExpression"
+                placeholder="e.g., Math.pow(Math.E, x**3)">
+            <label for="start">Start:</label>
+            <input type="number" id="start" name="start" placeholder="Start Point">
+            <label for="end">End:</label>
+            <input type="number" id="end" name="end" placeholder="End Point">
+            <label for="intervals">Intervals (n):</label>
+            <input type="number" id="intervals" name="intervals" placeholder="Number of Intervals">
+            <button type="button" onclick="calculateIntegration()">Calculate</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

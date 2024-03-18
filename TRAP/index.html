@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trapezoid Rule</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Calculate Area Under Curve</h1>
+        <form id="inputForm">
+            <h2>Input Method</h2>
+            <input type="radio" id="pointsRadio" name="inputMethod" value="points" checked>
+            <label for="pointsRadio">Points</label><br>
+            <input type="radio" id="functionRadio" name="inputMethod" value="function">
+            <label for="functionRadio">Function</label><br><br>
+
+            <div id="pointsInput">
+                <h2>Points</h2>
+                <label for="xPoints">X:</label>
+                <input type="text" id="xPoints" name="xPoints" placeholder="0, 0.5, 1, 1.5"><br>
+                <label for="yPoints">Y:</label>
+                <input type="text" id="yPoints" name="yPoints" placeholder="5, 6, 9, 11"><br><br>
+            </div>
+
+            <div id="functionInput" style="display: none;">
+                <h2>Function</h2>
+                <label for="functionExpression">Function:</label>
+                <input type="text" id="functionExpression" name="functionExpression" placeholder="x**2"><br>
+                <label for="start">Start:</label>
+                <input type="number" id="start" name="start" placeholder="0"><br>
+                <label for="end">End:</label>
+                <input type="number" id="end" name="end" placeholder="4"><br>
+                <label for="step">Step:</label>
+                <input type="number" id="step" name="step" placeholder="1"><br><br>
+            </div>
+
+            <button type="submit">Calculate</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

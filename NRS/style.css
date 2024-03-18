@@ -1,0 +1,60 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #222;
+    /* Dark background color */
+}
+
+input[type="text"],
+input[type="number"],
+button {
+    margin: 10px;
+    /* Increased margin for spacing */
+    padding: 10px;
+    /* Increased padding */
+    border: none;
+    border-radius: 5px;
+    width: calc(100% - 20px);
+    /* Adjusted width for input and button */
+    box-sizing: border-box;
+    /* Included padding and border in width calculation */
+    background-color: #333;
+    /* Dark background color */
+    color: orange;
+    /* Orange text color */
+    font-size: 16px;
+    /* Font size adjustment */
+}
+
+button {
+    background-color: orange;
+    /* Orange background color */
+    cursor: pointer;
+    color: white;
+}
+
+button:hover {
+    background-color: #ff8c00d8;
+    /* Darker shade of orange on hover */
+}
+
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+    color: orange;
+    /* Orange text color */
+}
+
+#Final{
+    font-size: 30px;
+}
